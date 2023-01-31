@@ -1,0 +1,91 @@
+body {
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.spaceShip {
+    width: 50px;
+    height: 35px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -211px -10px;
+}
+
+.character1 {
+    width: 35px;
+    height: 35px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png);
+    animation: character1_animation 1.5s steps(6) infinite;
+}
+
+@keyframes character1_animation {
+    from { background-position: 0px, }
+    to { background-position: -36px  }
+  }
+
+.character2 {
+    width: 35px;
+    height: 35px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -70px, 0;
+    animation: character2_animation 1.5s steps(6) infinite;
+}
+
+@keyframes character2_animation {
+    from { background-position: 0, }
+    to { background-position: -100px  }
+  }
+
+.character3 {
+    width: 35px;
+    height: 35px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -143px 0;
+    animation: character3_animation 1.5s steps(6) infinite;;
+}
+
+@keyframes character3_animation {
+    from { background-position: 0, }
+    to { background-position: -176px  }
+  }
+
+.hero {
+    width: 30px;
+    height: 35px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -273px -10px;
+}
+
+.hero_wals1 {
+    width: 55px;
+    height: 28px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -308px 0;
+}
+
+.hero_wals2 {
+    width: 55px;
+    height: 28px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -366px 0;
+}
+
+.hero_wals3 {
+    width: 55px;
+    height: 28px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -422px 0;
+}
+
+.hero_wals4 {
+    width: 55px;
+    height: 28px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -473px 0;
+}
+
+
+
+
+
+
+
