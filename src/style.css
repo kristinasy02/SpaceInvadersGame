@@ -12,68 +12,101 @@ header {
 }
 
 .spaceShip {
+    margin: auto;
     width: 50px;
     height: 35px;
     background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -211px -10px;
 }
 
+#container1, #container2, #container3, #container4, #container5 {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerCenter {
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: black;
+}
+
+.allContainers {
+  height: 200px;
+  width: 400px;
+  position: relative;
+  animation: containerMove 10s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes containerMove {
+    0%   {left: 100px; top: 0px;}
+    50% {left: 215px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+  }
+
 .character1 {
     width: 35px;
     height: 35px;
     background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png);
-    animation: character1_animation 1.5s steps(6) infinite;
+    animation: character1_animation 1s steps(2) infinite;
 }
 
 @keyframes character1_animation {
     from { background-position: 0px, }
-    to { background-position: -36px  }
+    to { background-position: -60px  }
   }
 
 .character2 {
     width: 35px;
     height: 35px;
     background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -70px, 0;
-    animation: character2_animation 1.5s steps(6) infinite;
+    animation: character2_animation 1s steps(2) infinite;
 }
 
 @keyframes character2_animation {
     from { background-position: 0, }
-    to { background-position: -100px  }
+    to { background-position: -132px  }
   }
 
 .character3 {
     width: 35px;
     height: 35px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -143px 0;
-    animation: character3_animation 1.5s steps(6) infinite;;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -140px 0;
+    animation: character3_animation 1s steps(2) infinite;;
 }
 
 @keyframes character3_animation {
     from { background-position: 0, }
-    to { background-position: -176px  }
+    to { background-position: -202px  }
   }
 
-.hero {
-    width: 30px;
-    height: 35px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -273px -10px;
+.row_walls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-top: 180px;
 }
 
 .hero_wals1 {
     width: 55px;
     height: 28px;
+    margin-right: 50px;
     background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -308px 0;
 }
 
 .hero_wals2 {
     width: 55px;
     height: 28px;
+    margin-right: 50px;
     background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -366px 0;
 }
 
 .hero_wals3 {
     width: 55px;
     height: 28px;
+    margin-right: 50px;
     background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -422px 0;
 }
 
@@ -81,6 +114,14 @@ header {
     width: 55px;
     height: 28px;
     background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -473px 0;
+}
+
+.hero {
+    margin: auto;
+    margin-top: 50px;
+    width: 30px;
+    height: 35px;
+    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -273px -10px;
 }
 
 
