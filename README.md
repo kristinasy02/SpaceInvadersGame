@@ -2,14 +2,14 @@
 
 //1 February
 
-Update:
+## Update:
 
 - Made an animation for every enemy character
 - Created an array with all of the enemies and the boss enemy on the top of the container
 - Created an animation for the whole enemy container to move on the x-axes
 - Positioned the space ship and the walls above it
 
-Next Steps:
+## Next Steps:
 
 - The frontend part is almost done so I will start the backend part (firstly I will start with the shooting an then with the score)
 
