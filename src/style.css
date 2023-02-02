@@ -119,6 +119,7 @@ header {
 .hero {
     margin: auto;
     margin-top: 50px;
+    position: absolute;
     width: 30px;
     height: 35px;
     background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -273px -10px;
