@@ -15,7 +15,7 @@ header {
     margin: auto;
     width: 50px;
     height: 35px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -211px -10px;
+    background: url(img/spritesheet.png) -211px -10px;
 }
 
 #container1, #container2, #container3, #container4, #container5 {
@@ -48,7 +48,7 @@ header {
 .character1 {
     width: 35px;
     height: 35px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png);
+    background: url(img/spritesheet.png);
     animation: character1_animation 1s steps(2) infinite;
 }
 
@@ -60,7 +60,7 @@ header {
 .character2 {
     width: 35px;
     height: 35px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -70px, 0;
+    background: url(img/spritesheet.png) -70px, 0;
     animation: character2_animation 1s steps(2) infinite;
 }
 
@@ -72,7 +72,7 @@ header {
 .character3 {
     width: 35px;
     height: 35px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -140px 0;
+    background: url(img/spritesheet.png) -140px 0;
     animation: character3_animation 1s steps(2) infinite;;
 }
 
@@ -93,27 +93,27 @@ header {
     width: 55px;
     height: 28px;
     margin-right: 50px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -308px 0;
+    background: url(img/spritesheet.png) -308px 0;
 }
 
 .hero_wals2 {
     width: 55px;
     height: 28px;
     margin-right: 50px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -366px 0;
+    background: url(img/spritesheet.png) -366px 0;
 }
 
 .hero_wals3 {
     width: 55px;
     height: 28px;
     margin-right: 50px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -422px 0;
+    background: url(img/spritesheet.png) -422px 0;
 }
 
 .hero_wals4 {
     width: 55px;
     height: 28px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -473px 0;
+    background: url(img/spritesheet.png) -473px 0;
 }
 
 .hero {
@@ -122,7 +122,7 @@ header {
     position: absolute;
     width: 30px;
     height: 35px;
-    background: url(/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png) -273px -10px;
+    background: url(img/spritesheet.png) -273px -10px;
 }
 
 
