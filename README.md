@@ -1,9 +1,12 @@
 # SpaceInvadersGame
 
-//3 February
+## 3 February 2022
 
 ### Update:
 - Researched about what could be used for the shooting. For now the idea for the ship shooting is to hide bullet behind the space ship and then with an animation we will move them. But I am still not able to find out how we will detect if a bullet has hit enemy or the space ship so that is what I am gonna research next
+- Homework
+  - Game Loop
+  - Logical development through comments
 
 ### Next Steps:
 - Implement the logic for shooting
@@ -40,7 +43,7 @@
 - Found the way to cut the sprite sheet properly from different positions by selecting a start position from the sprite sheet(the start position is set by height and width), by setting the width and the height of the element, we are getting the desired result
 - Started investigating and learning how the sprite sheet css animation works
   - currently there is implemented animation but it is not final because the desired result is still not achieved
-  
+
 ### Next Steps:
 
 - Continue with the frontend implementation(firstly make every enemy to be an animated)
