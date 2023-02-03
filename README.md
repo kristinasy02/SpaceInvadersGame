@@ -1,5 +1,13 @@
 # SpaceInvadersGame
 
+//3 February
+
+### Update:
+- Researched about what could be used for the shooting. For now the idea for the ship shooting is to hide bullet behind the space ship and then with an animation we will move them. But I am still not able to find out how we will detect if a bullet has hit enemy or the space ship so that is what I am gonna research next
+
+### Next Steps:
+- Implement the logic for shooting
+
 //2 February
 
 ### Update:
