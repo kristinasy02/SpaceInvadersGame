@@ -1,4 +1,4 @@
-let container1 = document.getElementById('container1');
+    let container1 = document.getElementById('container1');
     let container2 = document.getElementById('container2');
     let container3 = document.getElementById('container3');
     let container4 = document.getElementById('container4');
@@ -6,15 +6,15 @@ let container1 = document.getElementById('container1');
 
     for(i = 0; i < 10; i++) {
         container1.innerHTML+=
-        `<div class="character1"><img class="character1_spritesheet" src="/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png" alt="character1" width="1" height="1"></div>`;
+        `<div class="character1"><img class="character1_spritesheet" src="img/spritesheet.png" alt="character1" width="1" height="1"></div>`;
         container2.innerHTML+=
-        `<div class="character2"><img class="character2_spritesheet" src="/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png" alt="character2" width="1" height="1"><div>`;
+        `<div class="character2"><img class="character2_spritesheet" src="img/spritesheet.png" alt="character2" width="1" height="1"><div>`;
         container3.innerHTML+=
-        `<div class="character2"><img class="character2_spritesheet" src="/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png" alt="character2" width="1" height="1"><div>`;
+        `<div class="character2"><img class="character2_spritesheet" src="img/spritesheet.png" alt="character2" width="1" height="1"><div>`;
         container4.innerHTML+=
-        `<div class="character3"><img class="character3_spritesheet" src="/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png" alt="character3" width="1" height="1"></div>`;
+        `<div class="character3"><img class="character3_spritesheet" src="img/spritesheet.png" alt="character3" width="1" height="1"></div>`;
         container5.innerHTML+=
-        `<div class="character3"><img class="character3_spritesheet" src="/Users/kristinayordanova/Desktop/SpaceInvaders/img/spritesheet.png" alt="character3" width="1" height="1"></div>`;
+        `<div class="character3"><img class="character3_spritesheet" src="img/spritesheet.png" alt="character3" width="1" height="1"></div>`;
     }
 
 var moveX = 0;
