@@ -18,9 +18,13 @@ header {
     background: url(img/spritesheet.png) -211px -10px;
 }
 
-#container1, #container2, #container3, #container4, #container5 {
+#invadersBody{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.invadersRow{
+    display: flex;
 }
 
 .containerCenter {
