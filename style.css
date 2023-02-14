@@ -13,9 +13,10 @@ header {
 
 .spaceShip {
     margin: auto;
-    width: 50px;
-    height: 35px;
-    background: url(img/spritesheet.png) -211px -10px;
+    margin-bottom: 15px;
+    width: 70px;
+    height: 40px;
+    background: url(img/spritesheet.png) -319px -301px;
 }
 
 #invadersBody{
@@ -50,39 +51,39 @@ header {
   }
 
 .character1 {
-    width: 35px;
+    width: 40px;
     height: 35px;
-    background: url(img/spritesheet.png);
+    background: url(img/spritesheet.png) -15px, -320px;
     animation: character1_animation 1s steps(2) infinite;
 }
 
 @keyframes character1_animation {
-    from { background-position: 0px, }
-    to { background-position: -60px  }
+    from { background-position: 0,}
+    to { background-position: -96px }
   }
 
 .character2 {
-    width: 35px;
+    width: 40px;
     height: 35px;
-    background: url(img/spritesheet.png) -70px, 0;
+    background: url(img/spritesheet.png) -115px, -318px;
     animation: character2_animation 1s steps(2) infinite;
 }
 
 @keyframes character2_animation {
     from { background-position: 0, }
-    to { background-position: -132px  }
+    to { background-position: -200px  }
   }
 
 .character3 {
-    width: 35px;
+    width: 40px;
     height: 35px;
-    background: url(img/spritesheet.png) -140px 0;
+    background: url(img/spritesheet.png) -217px -312px;
     animation: character3_animation 1s steps(2) infinite;;
 }
 
 @keyframes character3_animation {
     from { background-position: 0, }
-    to { background-position: -202px  }
+    to { background-position: -300px  }
   }
 
 .row_walls {
@@ -94,39 +95,39 @@ header {
 }
 
 .hero_wals1 {
-    width: 55px;
-    height: 28px;
+    width: 70px;
+    height: 70px;
     margin-right: 50px;
-    background: url(img/spritesheet.png) -308px 0;
+    background: url(img/spritesheet.png) -460px, -256px;
 }
 
 .hero_wals2 {
-    width: 55px;
-    height: 28px;
+    width: 70px;
+    height: 70px;
     margin-right: 50px;
-    background: url(img/spritesheet.png) -366px 0;
+    background: url(img/spritesheet.png) -541px, -256px;
 }
 
 .hero_wals3 {
-    width: 55px;
-    height: 28px;
+    width: 70px;
+    height: 70px;
     margin-right: 50px;
-    background: url(img/spritesheet.png) -422px 0;
+    background: url(img/spritesheet.png) -617px, -256px;
 }
 
 .hero_wals4 {
-    width: 55px;
-    height: 28px;
-    background: url(img/spritesheet.png) -473px 0;
+    width: 70px;
+    height: 70px;
+    background: url(img/spritesheet.png) -693px, -256px;
 }
 
 .hero {
     margin: auto;
     margin-top: 50px;
     position: absolute;
-    width: 30px;
+    width: 40px;
     height: 35px;
-    background: url(img/spritesheet.png) -273px -10px;
+    background: url(img/spritesheet.png) -405px, -311px;
 }
 
 

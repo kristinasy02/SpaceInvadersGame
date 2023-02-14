@@ -37,6 +37,8 @@ for (i = 0; i < allInvaders.length; i++) {
 }
 invaders.append(invadersBody);
 
+let wall =  document.getElementById("heroWalls3.pnf")
+let wallState = [1,2,3,4];
 
 var moveX = 0;
 const speed = 10;
