@@ -128,8 +128,23 @@ header {
     width: 40px;
     height: 35px;
     background: url(img/spritesheet.png) -405px, -311px;
+    z-index: 20;
 }
 
+.bullet {
+    margin: auto;
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    background: url(img/spritesheet.png) -597px -380px; 
+}
+
+.bullets {
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
 
 
 

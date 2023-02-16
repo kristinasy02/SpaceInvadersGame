@@ -24,7 +24,7 @@ allInvaders[2] = character2SecondArray;
 allInvaders[3] = character3Array;
 allInvaders[4] = character3SecondArray;
 let invadersBody = document.getElementById('invadersBody');
-let invaders  = document.getElementById('invaders');
+let invaders = document.getElementById('invaders');
 for (i = 0; i < allInvaders.length; i++) {
     var row = document.createElement('tr');
     row.classList.add('invadersRow');
@@ -37,8 +37,8 @@ for (i = 0; i < allInvaders.length; i++) {
 }
 invaders.append(invadersBody);
 
-let wall =  document.getElementById("heroWalls3.pnf")
-let wallState = [1,2,3,4];
+let wall = document.getElementById("heroWalls3.pnf")
+let wallState = [1, 2, 3, 4];
 
 var moveX = 0;
 const speed = 10;
@@ -48,7 +48,9 @@ if (document.getElementById('hero').style.left == 0) {
     document.getElementById('hero').style.left = ((w / 2) - 7.5) + "px"
 }
 
+
 window.addEventListener("keydown", Control);
+window.addEventListener("keydown", Shoot);
 
 function Control() {
     let key = event.key;
@@ -56,19 +58,43 @@ function Control() {
     let position = document.getElementById('position')
 
     if (key == "ArrowLeft") {
-        if (parseFloat(hero.style.left) < 260) return;
+        if (parseFloat(hero.style.left) < 540) return;
         moveX = (parseFloat(hero.style.left) - speed);
         hero.style.left = moveX + "px";
         position.innerHTML = "X:" + moveX;
     }
     else if (key == "ArrowRight") {
-        if (parseFloat(hero.style.left) > 830) return;
+        if (parseFloat(hero.style.left) > 1090) return;
         moveX = (parseFloat(hero.style.left) + speed);
         hero.style.left = moveX + "px";
         position.innerHTML = "X: " + moveX;
     }
     else {
         hero.style.left = parseFloat(hero.style.left) + "px";
+    }
+}
+
+let isMoving = null;
+function Shoot() {
+    let moveY = 0;
+    let key = event.key;
+    if (key == " ") {
+        let hero = document.getElementById('hero')
+        let bullet = document.createElement('div');
+        bullet.className = "bullet";
+        bullet.id = "bullet";
+        hero.appendChild(bullet);
+        let b = document.getElementById('bullet');
+        b.style.bottom = 0;
+        setInterval(() => {
+            if (moveY == 600) {
+                clearInterval(isMoving);
+            } else {
+                b.style.zIndex = 10;
+                moveY++;
+                b.style.bottom = moveY + 'px';
+            }
+        }, 10);
     }
 }
 
