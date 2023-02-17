@@ -73,7 +73,7 @@ Implement the states if the walls( which will contend 4 states for every hit the
 ### Next Steps:
 - Implement the logic for shooting
 
-//2 February
+## 2 February
 
 ### Update:
 - Researched how to execute logic after exactly keyboard button is pressed
