@@ -1,5 +1,67 @@
 # SpaceInvadersGame
 
+## 16 February
+
+### Update:
+Created a base logic for the spaceship shooting: 
+  -Cut bullet spritesheet
+  -On space click a bullet will appear
+  -An animation to the top starts(until I found out how to detect invaders)
+
+ ### Next Steps: 
+-Make every bullet to have his own “brain” so he can continue on it’s own way
+-Start with the invaders shooting
+
+## 15 February 
+
+### Update:
+-Facing troubles with the implementation of the functions and arrow animation, that is caused because I am switching my mind between the different parts of the points that i mentioned
+-So i created a todo list which is
+- First made the animation(almost done)
+-Second create the invaders shooting function, attach the animation, after it is done create the spaceship shooting function
+
+### Next steps:
+- First finish the shooting animation(which only includes the bullet movement and spritesheet cut)
+- Then continue with the other points 
+
+## 14 February 
+
+### Update:
+- Currently working on the bullet animation 
+- Trying to found a solution for the shooting logic, that will be in the game loop what i currently have in mind is that:
+we will have two functions, one for the space ship and one for the invaders- the invaders function will include a random generator, which will choose which of the invaders will shoot, we will have a loop which will shoot in every couple of seconds. The spaceship function will be simple, on space click, the space ship will shoot
+
+### Next Steps:
+- I have decided to firstly done the shooting part and after that the part with the walls, because we need the first in case to do the second, so that are my next steps 
+
+## 13 February 
+
+### Update:
+-Changed the spritesheet image and cropped all of the items again(that took a lot of time, because i did not use any other source, and done it with only guessing
+- started implementing states of the walls
+
+### Next Steps:
+Implement the states if the walls( which will contend 4 states for every hit the every state will go down by one)
+
+## 9 February
+
+### Update:
+ -Made the initialisation of the invaders
+- two dimensional array which have 5 arrays with 11 elements(invaders)
+- a loop which went through the array and makes a table which is presented by the front end part
+
+### Next Steps:
+-continue with the points that we discussed in the daily
+
+## 6 February
+
+### Update:
+	- Working on the array that we spoke about in the last call, still not able to adjust it but, the solution is near and it will be soon ready
+  
+### Next steps:
+	- Adjust the array
+	- Continue with the next steps that we already spoke about.
+
 ## 3 February 2022
 
 ### Update:
