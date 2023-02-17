@@ -84,7 +84,7 @@ Implement the states if the walls( which will contend 4 states for every hit the
 - Add EventListener for the space button and start creating the logic for the shooting
 
 
-//1 February
+## 1 February
 
 ### Update:
 
@@ -98,7 +98,7 @@ Implement the states if the walls( which will contend 4 states for every hit the
 - The frontend part is almost done so I will start the backend part (firstly I will start with the shooting an then with the score)
 
 
-//31 January
+## 31 January
 
 ### Update:
 
@@ -111,7 +111,7 @@ Implement the states if the walls( which will contend 4 states for every hit the
 - Continue with the frontend implementation(firstly make every enemy to be an animated)
 
 
-//27 January
+## 27 January
 
 ### Update:
 
@@ -123,7 +123,7 @@ Implement the states if the walls( which will contend 4 states for every hit the
 - setup the frontend part  step by step(the invaders will be an array with different sprite sheet cut images for different rows)
 
 
-//26 January
+## 26 January
 
 ### Update:
 
