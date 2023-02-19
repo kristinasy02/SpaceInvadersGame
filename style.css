@@ -40,7 +40,7 @@ header {
   height: 200px;
   width: 400px;
   position: relative;
-  animation: containerMove 10s infinite;
+  animation: containerMove 5s infinite;
   animation-direction: alternate;
 }
 

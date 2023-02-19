@@ -117,7 +117,7 @@ function update(){
     updateBullet() 
     window.requestAnimationFrame(update);
   }
-
+  update();
 // INITIALISATION
 // Generate the array w/ the invaders.
 //   cycle through the rows
@@ -142,4 +142,3 @@ function update(){
 
 // ACTION
 // Display everything including the movements.
-update();
