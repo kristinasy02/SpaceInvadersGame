@@ -9,6 +9,7 @@ let character2Array = [];
 let character2SecondArray = [];
 let character3SecondArray = [];
 let character3Array = [];
+let y = 0;
 for (i = 0; i < 11; i++) {
     character1Array[i] = `<div class="character1"><img class="character1_spritesheet" src="img/spritesheet.png" alt="character1" width="1" height="1"><div>`;
     character2Array[i] = `<div class="character2"><img class="character2_spritesheet" src="img/spritesheet.png" alt="character2" width="1" height="1"><div>`;
@@ -39,10 +40,11 @@ invaders.append(invadersBody);
 
 let wall = document.getElementById("heroWalls3.pnf")
 let wallState = [1, 2, 3, 4];
+let bullets = [];
 
-var moveX = 0;
-const speed = 10;
 var w = document.body.clientWidth;
+let moveX = w/2 -7.5;
+const speed = 10;
 
 if (document.getElementById('hero').style.left == 0) {
     document.getElementById('hero').style.left = ((w / 2) - 7.5) + "px"
@@ -50,7 +52,7 @@ if (document.getElementById('hero').style.left == 0) {
 
 
 window.addEventListener("keydown", Control);
-window.addEventListener("keydown", Shoot);
+window.addEventListener("keyup", Shoot);
 
 function Control() {
     let key = event.key;
@@ -74,29 +76,47 @@ function Control() {
     }
 }
 
-let isMoving = null;
-function Shoot() {
-    let moveY = 0;
-    let key = event.key;
-    if (key == " ") {
-        let hero = document.getElementById('hero')
-        let bullet = document.createElement('div');
-        bullet.className = "bullet";
-        bullet.id = "bullet";
-        hero.appendChild(bullet);
-        let b = document.getElementById('bullet');
-        b.style.bottom = 0;
-        setInterval(() => {
-            if (moveY == 600) {
-                clearInterval(isMoving);
-            } else {
-                b.style.zIndex = 10;
-                moveY++;
-                b.style.bottom = moveY + 'px';
-            }
-        }, 10);
+function createBullet(x){
+    let container = document.getElementById('center');
+    let bullet = document.createElement('div');
+    bullet.style.left=x;
+    bullet.className = "bullet";
+    bullet.id = "bullet";
+    container.appendChild(bullet);
+    bullets.push({bullet, x,y}) ;
+}
+function deleteBullet(bullets, bullet, $bullet){
+    let container = document.getElementById('center');
+    const index = bullets.indexOf(bullet);
+    bullets.splice(index,1);
+    container.removeChild($bullet);
+  }
+function updateBullet(){
+    for(let bullet of bullets){
+        bullet.y -= 2;
+        if (bullet.y < -550){
+            deleteBullet(bullets, bullet, bullet.bullet);
+          }
+        setPosition(bullet.bullet, bullet.x, bullet.y);
     }
 }
+
+
+function Shoot(){
+    let key = event.key;
+    if(key == " "){
+        createBullet(moveX + 11.5);
+    }
+}
+
+function setPosition(element, x, y) {
+    element.style.transform = `translate(0px, ${y}px)`;
+    element.style.left = x + 'px';
+}
+function update(){
+    updateBullet() 
+    window.requestAnimationFrame(update);
+  }
 
 // INITIALISATION
 // Generate the array w/ the invaders.
@@ -122,3 +142,4 @@ function Shoot() {
 
 // ACTION
 // Display everything including the movements.
+update();
