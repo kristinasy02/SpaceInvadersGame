@@ -1,5 +1,15 @@
 # SpaceInvadersGame
 
+## 17 February
+
+### Update:
+-Created a bullet array in which we push objects which contains bullet’s x and y and bullet html element
+-Created a function which deletes every bullet it goes out of the screen
+-Now every bullet went to its own direction when it is shot
+-So the shooting functionality for the spaceship is ready
+### Next steps:
+- Try to understand how to detect if a bullet hit an invader
+
 ## 16 February
 
 ### Update:
