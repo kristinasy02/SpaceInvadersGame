@@ -1,5 +1,12 @@
 # SpaceInvadersGame
 
+## 20 February
+
+### Update:
+- I am still trying to figure out how to understand if a bullet hit an invader, a thing that i am currently trying to do is - every invader will be object have x, y and invader html element properties, and we will check if the bullet x and y are the same as the one of the invaders if yes, we will remove the invader from the invaders array
+
+### Next Steps:
+- Implement the solution above
 ## 17 February
 
 ### Update:
