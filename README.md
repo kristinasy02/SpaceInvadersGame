@@ -37,16 +37,16 @@ Created a base logic for the spaceship shooting:
   -An animation to the top starts(until I found out how to detect invaders)
 
  ### Next Steps: 
--Make every bullet to have his own “brain” so he can continue on it’s own way
--Start with the invaders shooting
+- Make every bullet to have his own “brain” so he can continue on it’s own way
+- Start with the invaders shooting
 
 ## 15 February 
 
 ### Update:
--Facing troubles with the implementation of the functions and arrow animation, that is caused because I am switching my mind between the different parts of the points that i mentioned
--So i created a todo list which is
+- Facing troubles with the implementation of the functions and arrow animation, that is caused because I am switching my mind between the different parts of the points that i mentioned
+- So i created a todo list which is
 - First made the animation(almost done)
--Second create the invaders shooting function, attach the animation, after it is done create the spaceship shooting function
+- Second create the invaders shooting function, attach the animation, after it is done create the spaceship shooting function
 
 ### Next steps:
 - First finish the shooting animation(which only includes the bullet movement and spritesheet cut)
