@@ -32,9 +32,9 @@
 
 ### Update:
 Created a base logic for the spaceship shooting: 
-  -Cut bullet spritesheet
-  -On space click a bullet will appear
-  -An animation to the top starts(until I found out how to detect invaders)
+  - Cut bullet spritesheet
+  - On space click a bullet will appear
+  - An animation to the top starts(until I found out how to detect invaders)
 
  ### Next Steps: 
 - Make every bullet to have his own “brain” so he can continue on it’s own way
