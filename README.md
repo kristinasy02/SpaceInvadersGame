@@ -1,5 +1,13 @@
 # SpaceInvadersGame
 
+## 23 February 
+
+### Update:
+- Made an object for every invader, but the code was mess, everything was on the same place(and it was not working, there were errors in the console), so i started again from scratch the implementation of the , i have learned my lesson, to make everything step by step, and to not rush
+
+### Next Steps:
+- Implement the solution step by step-> the first will be to create an object which will not be in functions and for loops, then set their properties with a function, which we will call in the for loop
+
 ## 20 February
 
 ### Update:
