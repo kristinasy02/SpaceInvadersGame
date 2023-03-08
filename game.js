@@ -10,6 +10,9 @@ let character2SecondArray = [];
 let character3SecondArray = [];
 let character3Array = [];
 let y = 0;
+// TODO
+// See how you can get rid of this HTML
+// Make it w/ JS
 for (i = 0; i < 11; i++) {
     character1Array[i] = `<div class="character1"><img class="character1_spritesheet" src="img/spritesheet.png" alt="character1" width="1" height="1"><div>`;
     character2Array[i] = `<div class="character2"><img class="character2_spritesheet" src="img/spritesheet.png" alt="character2" width="1" height="1"><div>`;
@@ -114,7 +117,7 @@ function setPosition(element, x, y) {
     element.style.left = x + 'px';
 }
 function update(){
-    updateBullet() 
+    updateBullet()
     window.requestAnimationFrame(update);
   }
   update();
