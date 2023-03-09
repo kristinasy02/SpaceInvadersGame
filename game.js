@@ -43,6 +43,11 @@ invaders.append(invadersBody);
 
 let wall = document.getElementById("heroWalls3.pnf")
 let wallState = [1, 2, 3, 4];
+let invadersState = [
+    "alive",
+    "exploded",
+    "destroyed"
+];
 let bullets = [];
 
 var w = document.body.clientWidth;
